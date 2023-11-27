@@ -142,6 +142,10 @@ ul {
   background-color: #404bbf;
 }
 
+.solution-button:focus {
+  background-color: #404bbf;
+}
+
 /* Features */
 
 .features-container {
