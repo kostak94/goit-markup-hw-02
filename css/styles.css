@@ -79,6 +79,11 @@ ul {
 
 .header-contacts-container {
   font-style: normal;
+  float: right;
+}
+
+.header-contacts-link-container {
+  float: left;
 }
 
 .header-contacts-link {
@@ -89,7 +94,6 @@ ul {
   letter-spacing: 0.32px;
   margin-left: 40px;
   text-decoration: none;
-  float: inline-end;
 }
 
 /* section-solution */
