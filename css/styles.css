@@ -11,6 +11,10 @@ ul {
   list-style-type: none;
 }
 
+.float-fixer {
+  clear: both;
+}
+
 /* header */
 .header-section {
   display: flex;
@@ -37,6 +41,11 @@ ul {
 .header-contacts-link:hover {
   color: #404bbf;
 }
+
+.header-nav-link:focus,
+.header-contacts-link:focus {
+  color: #404bbf;
+}
 .header-nav-link:active {
   color: #404bbf;
   text-decoration: underline;
@@ -49,7 +58,7 @@ ul {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.17;
   letter-spacing: 0.54px;
   margin-right: 76px;
   padding: 0;
@@ -69,11 +78,14 @@ ul {
   text-decoration: none;
 }
 
+.header-contacts-container {
+  font-style: normal;
+}
+
 .header-contacts-link {
   color: #434455;
   font-size: 16px;
   font-weight: 400;
-  font-style: normal;
   line-height: 24px;
   letter-spacing: 0.32px;
   margin-left: 40px;
@@ -95,7 +107,7 @@ ul {
   text-align: center;
   font-size: 56px;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 1.07;
   letter-spacing: 1.12px;
   padding: 0;
   margin-top: 188px;
@@ -106,6 +118,7 @@ ul {
 
 .solution-button {
   color: #fff;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -122,29 +135,37 @@ ul {
   padding: 16px 31px;
   align-items: flex-start;
   gap: 10px;
+  cursor: pointer;
 }
 
 .solution-button:hover {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 /* Features */
 
 .features-container {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center; */
   margin: 120px 0;
 }
 
 .features-item {
-  display: flex;
+  /* display: flex; */
   width: 264px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  /* gap: 8px; */
   margin-right: 24px;
+  float: left;
 }
+
+/* .features-container:last-child:after {
+  content: "";
+  clear: both;
+  display: block;
+} */
 
 .features-title {
   color: #2e2f42;
@@ -183,7 +204,7 @@ ul {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
   margin-bottom: 72px;
@@ -243,7 +264,7 @@ ul {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
   margin-bottom: 72px;
@@ -294,37 +315,32 @@ ul {
 /* footer */
 
 .section-footer {
-  background: #2e2f42;
+  background-color: #2e2f42;
   margin: 0;
   padding: 100px 0;
 }
 
 .footer-logo-link {
-  color: #f4f4fd;
+  color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 21px;
-  letter-spacing: 0.54px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.logo-text-footer {
+  color: #f4f4fd;
 }
 
 .footer-text {
   color: #f4f4fd;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-top: 12px;
   margin-bottom: 0;
-}
-
-.footer-container {
-  display: flex;
-  width: 264px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  margin-left: 156px;
 }
